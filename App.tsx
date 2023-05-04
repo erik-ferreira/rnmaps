@@ -40,6 +40,8 @@ export default function App() {
       },
       (response) => {
         setLocation(response);
+
+        // to center map
         mapRef?.current?.animateCamera({
           pitch: 20,
           center: response.coords,
